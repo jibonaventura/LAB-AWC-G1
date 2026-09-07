@@ -8,19 +8,31 @@
   </head>
 
 <body>
-    <header>
+  <header>
 
-    </header>
+  </header>
 
-    <main>
+    <main class = "container">
+      <!-- Buscador -->
+        <input type = "text" name = "search" id="search-bar" placeholder="Buscar">
 
+      <!-- Lista de productos -->
+        <div class = "row row-cols-1 row-cols-md-4 g-4 mt-5" id = "product-list">
+        </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="product-modal" tabindex="-1" aria-labelledby="product-modalLabel" aria-hidden="true">
+      </div>   
+      
     </main>
 
-    <footer>
+  <footer>
 
-    </footer>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script type="module" src="./src/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script type="module" src="./src/index.js"></script>
+
 </body>
 </html>

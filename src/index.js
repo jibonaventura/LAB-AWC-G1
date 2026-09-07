@@ -1,5 +1,3 @@
-import {getProducts} from "./api.js";
+import {RenderCards} from "./components/cards.js";
 
-getProducts().then((products) => {
-    console.log(products);
-});
+RenderCards();
