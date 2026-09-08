@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>G-1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
 
 <body>
@@ -16,14 +17,32 @@
       <!-- Buscador -->
         <input type = "text" name = "search" id="search-bar" placeholder="Buscar">
 
+      <!-- Carrito -->  
+        <button class="btn btn-outline-dark border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="bi bi-cart-fill"></i>
+        </button>
       <!-- Lista de productos -->
         <div class = "row row-cols-1 row-cols-md-4 g-4 mt-5" id = "product-list">
         </div>
+
+      
+      
 
 
       <!-- Modal -->
       <div class="modal fade" id="product-modal" tabindex="-1" aria-labelledby="product-modalLabel" aria-hidden="true">
       </div>   
+
+      <!-- Lista de productos en carrito -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Productos en Carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- Logica de lista de productos por JS  -->
+        </div>
+      </div>  
       
     </main>
 
