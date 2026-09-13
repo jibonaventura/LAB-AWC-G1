@@ -20,15 +20,18 @@ export function Modal(prod) {
                 <div class = "col-md-6">
                 <p>${prod.description}</p>
             </div>
-                <div class = " col-12 d-flex justify-content-end align-items-start">
+                <div class = "col-12 d-flex justify-content-end align-items-start">
                 <h5>Precio: USD $${prod.price}</h5>
-                ${contador(prod.id)}
             </div>
         </div>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer d-flex justify-content-between align-items-center">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary" id="addToCartBtn-${prod.id}">Agregar al carrito</button>
+        
+        <div class="d-flex align-items-center gap-2">
+            ${contador(prod.id)}
+            <button type="button" class="btn btn-primary" id="addToCartBtn-${prod.id}">Agregar al carrito</button>
+        </div>
     </div>
 </div>
     `;
