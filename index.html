@@ -21,8 +21,9 @@
         <a class="navbar-brand fw-bold tracking-wider text-uppercase mx-auto" href="#">G-1 SHOP</a>
         
         <!-- Carrito -->
-        <button class="btn btn-outline-dark border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <button class="btn btn-outline-dark border-0 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             <i class="bi bi-cart3 fs-5"></i>
+            <span class="position-absolute top-0 end-0 translate-middle-y badge rounded-pill bg-danger d-none" id="cart-badge">0</span>
         </button>
     </nav>
   </header>
@@ -63,6 +64,9 @@
     </div>  
       
   </main>
+
+  <!-- Notificaciones -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toast-container"></div>
 
   <footer>
 

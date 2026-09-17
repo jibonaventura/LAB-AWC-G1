@@ -28,3 +28,13 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.carrito-img {
+    height: 90px;
+    object-fit: contain;
+}
+
+.offcanvas {
+    width: 100%;
+    max-width: 420px;
+}
