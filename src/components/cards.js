@@ -1,6 +1,7 @@
 import { getProducts } from "../api.js";
 import { Modal } from "./modal.js";
 import { renderCategorias } from "./categorias.js";
+import { estrellas } from "./estrellas.js";
 
 export async function RenderCards() {
     let productList = document.querySelector('#product-list');
@@ -49,6 +50,7 @@ export async function RenderCards() {
                             <div>
                                 <h3 class="card-title text-truncate fs-6" title="${p.title}">${p.title}</h3>
                                 <p class="text-muted small text-capitalize mb-2">${p.category}</p>
+                                ${estrellas(p.rating)}
                             </div>
                             <div>
                                 <p class="fw-bold fs-5 mb-2">USD $${p.price.toFixed(2)}</p>
