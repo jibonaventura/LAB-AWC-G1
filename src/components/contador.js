@@ -18,16 +18,15 @@ export function addEventListener(id, cantidad) {
     let spanContador = document.querySelector(`#contador-${id}`);
 
     btnIncrementar.addEventListener('click', () => {
-        spanContador.textContent = ++cantidad;
+        cantidad++;
+        spanContador.textContent = cantidad;
     })
 
     btnDecrementar.addEventListener('click', () => {
         if (cantidad > 1) {
-            spanContador.textContent = --cantidad;
+            cantidad--;
+            spanContador.textContent = cantidad;
         }
-
-        spanContador.textContent = cantidad;
-        
     })
 
 }
