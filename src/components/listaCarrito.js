@@ -7,6 +7,7 @@ import {
     getCantidadTotal
 } from "../storage.js";
 import { notificacion } from "./notificacion.js";
+import { formularioCompra } from "./formulario.js";
 
 export function listaCarrito() {
     let container = document.querySelector('.offcanvas-body');
@@ -109,11 +110,14 @@ function agregarEventos(container) {
     });
 
     document.querySelector('#finalizarCompra').addEventListener('click', () => {
-        let total = getTotalCarrito().toFixed(2);
+        let offcanvasEl = document.querySelector('#offcanvasRight');
+        let offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
 
-        vaciarCarrito();
-        listaCarrito();
-        notificacion(`Compra finalizada con exito. Total: USD $${total}. Gracias por tu compra!`);
+        if (offcanvas) {
+            offcanvas.hide();
+        }
+
+        formularioCompra(listaCarrito);
     });
 }
 

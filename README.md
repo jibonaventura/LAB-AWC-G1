@@ -26,7 +26,8 @@ Listado de productos dentro del carrito y logica para sumar y eliminar productos
 Primera version del manejo de `localStorage`.
 
 **Martin** — Modulo de filtros: navegacion por categorias obtenidas desde la API y su integracion
-con el buscador. Logica de finalizar compra y de vaciado completo del carrito.
+con el buscador. Logica de finalizar compra y de vaciado completo del carrito. Formulario de
+checkout con los datos del comprador y validacion de todos los campos.
 
 **Jaime Valdes** — Integracion de los modulos de carrito y filtros sobre la estructura del proyecto.
 Persistencia completa en `localStorage` en todas las acciones del carrito. Sistema de notificaciones,
@@ -46,6 +47,8 @@ diseño responsive y documentacion.
 - Badge en la barra de navegacion con la cantidad total de unidades en el carrito.
 - Boton de finalizar compra y boton para eliminar todos los productos. Ambos se ocultan
   cuando el carrito esta vacio.
+- Formulario de checkout al finalizar la compra, con los datos del comprador y validacion
+  de todos los campos antes de confirmar.
 - Notificaciones al usuario al agregar, eliminar y finalizar la compra.
 - Buscador de productos por nombre.
 - Navegacion por categorias.
